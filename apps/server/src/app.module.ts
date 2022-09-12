@@ -11,6 +11,7 @@ import { UtilitiesModule } from './utilities/utilities.module';
 import printerConfig from './config/printer.config';
 import serverConfig from './config/server.config';
 import { HealthModule } from './health/health.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
     imports: [
@@ -25,6 +26,7 @@ import { HealthModule } from './health/health.module';
         UtilitiesModule,
         InterfacesModule,
         HealthModule,
+        DashboardModule,
     ],
 })
 export class AppModule {}
